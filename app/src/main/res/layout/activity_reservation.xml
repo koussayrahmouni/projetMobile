@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/white"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/spotNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make a Reservation"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#1B1B1B"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/totalAmountTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount: $0.00"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#FF018786"
+                android:layout_marginBottom="16dp" />
+
+                <Spinner
+                    android:id="@+id/timeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="8dp"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Vehicle Type:"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioGroup
+                    android:id="@+id/vehicleTypeRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_two_wheeled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2-Wheeled" />
+
+                    <RadioButton
+                        android:id="@+id/radio_four_wheeled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4-Wheeled" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Proceed to Payment Button -->
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Payment"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8692f7"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

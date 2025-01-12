@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Parking Lot</string> <!-- Corrected closing tag -->
+    <string name="open_nav">Navigator</string> <!-- Corrected closing tag -->
+    <string name="close_nav">Parking Lot</string> <!-- Corrected closing tag -->
+
+
+    <string-array name="time_options">
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
