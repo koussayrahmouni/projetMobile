@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="2dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/favorite_parking_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Parking Name"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/favorite_parking_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:text="Parking Address"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btn_update_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mod"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue" />
+
+    <Button
+        android:id="@+id/btn_delete_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sup"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/read" />
+</LinearLayout>

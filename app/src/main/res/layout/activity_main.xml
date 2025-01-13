@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Barre de recherche et bouton -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/search_background2"
+        android:gravity="center"
+        android:padding="7dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Recherche de parking"
+            android:padding="10dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/blue_gami9"
+            android:text="Recherche"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Bouton pour afficher les parkings favoris -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/show_favorites_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afficher les favoris"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue_gami9"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/category_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afficher les categories"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue_gami9"
+        android:layout_marginTop="16dp"
+
+        />
+    </LinearLayout>
+
+    <!-- Liste des parkings -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parking_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+</LinearLayout>
