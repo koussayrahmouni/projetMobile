@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="16dp">
+
+    <!-- Visa Card View -->
+    <RelativeLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/card_background"
+        android:padding="16dp">
+
+        <!-- Card Number -->
+        <TextView
+            android:id="@+id/tvCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="**** **** **** ****"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cvv_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV" />
+
+        <!-- Card Holder Label -->
+        <TextView
+            android:id="@+id/tvCardHolderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:text="CARD HOLDER"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- Card Holder Name -->
+        <TextView
+            android:id="@+id/tvCardHolderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCardHolderLabel"
+            android:layout_marginTop="4dp"
+            android:text="Your Name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Expiry Label -->
+        <TextView
+            android:id="@+id/tvExpiryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="Expiry"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <!-- Expiry Date -->
+        <TextView
+            android:id="@+id/tvExpiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvExpiryLabel"
+            android:layout_marginTop="4dp"
+            android:text="MM/YY"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Card Holder Input -->
+    <EditText
+        android:id="@+id/editText_cardholder_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView"
+        android:hint="Card holder name"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp" />
+
+    <!-- Card Number Input -->
+    <EditText
+        android:id="@+id/editText_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_cardholder_name"
+        android:layout_marginTop="8dp"
+        android:hint="Card number"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp" />
+
+    <!-- Expiration Month -->
+    <EditText
+        android:id="@+id/editText_expiration_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_card_number"
+        android:layout_marginTop="8dp"
+        android:hint="Expiration month (MM)"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp" />
+
+    <!-- Expiration Year -->
+    <EditText
+        android:id="@+id/editText_expiration_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_expiration_month"
+        android:layout_marginTop="8dp"
+        android:hint="Expiration year (YY)"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp" />
+
+    <!-- Balance to Add -->
+    <EditText
+        android:id="@+id/editText_balance_to_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_expiration_year"
+        android:layout_marginTop="8dp"
+        android:hint="Balance to add"
+        android:inputType="numberDecimal"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp" />
+
+    <!-- CVC Input -->
+    <EditText
+        android:id="@+id/editText_cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_balance_to_add"
+        android:layout_marginTop="8dp"
+        android:hint="CVC"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#AAAAAA"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp" />
+
+    <!-- Add Money Button -->
+    <Button
+        android:id="@+id/button_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_cvv"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6200EE"
+        android:text="Add Money"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

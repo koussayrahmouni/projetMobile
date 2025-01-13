@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_blue"
+    tools:context=".RegisterActivity">
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Form Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_background"
+            android:padding="20dp"
+            android:clipToPadding="false">
+
+            <!-- Full Name Field -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_input"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageViewName"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_profile1" />
+
+                <EditText
+                    android:id="@+id/editText_register_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewName"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white" />
+            </RelativeLayout>
+
+            <!-- Email Field -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_input"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageViewEmail"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_email" />
+
+                <EditText
+                    android:id="@+id/editText_register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewEmail"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white" />
+            </RelativeLayout>
+
+            <!-- Date of Birth Field -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_input"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageViewDoB"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_calendar" />
+
+                <EditText
+                    android:id="@+id/editText_register_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewDoB"
+                    android:hint="Date of Birth"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:inputType="none" />
+            </RelativeLayout>
+
+            <!-- Mobile Field -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_input"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageViewMobile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_mobile" />
+
+                <EditText
+                    android:id="@+id/editText_register_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewMobile"
+                    android:hint="Mobile Number"
+                    android:inputType="phone"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white" />
+            </RelativeLayout>
+
+            <!-- Password Field -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_input"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageViewPwd"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_pwd_bw" />
+
+                <EditText
+                    android:id="@+id/editText_register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageViewPwd"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@android:color/white" />
+            </RelativeLayout>
+
+            <!-- Terms and Conditions -->
+            <CheckBox
+                android:id="@+id/checkBox_terms_conditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I agree to the Terms and Conditions"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_button"
+                android:text="Register"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:padding="14dp" />
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

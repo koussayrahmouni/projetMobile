@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Layer: Visa Card Image -->
+    <item>
+        <bitmap
+            android:src="@drawable/visa_card_background"></bitmap> <!-- Replace with your Visa card image -->
+        android:gravity="fill" />
+    </item>
+
+    <!-- Overlay Layer: Shape for Rounded Cornersx   -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Transparent background for rounded corner enforcement -->
+            <solid android:color="#00000000" />
+
+            <!-- Rounded Corners -->
+            <corners android:radius="16dp" />
+
+            <!-- Optional Border -->
+            <stroke
+                android:width="1dp"
+                android:color="#DADADA" />
+        </shape>
+    </item>
+</layer-list>

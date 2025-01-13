@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/app_blue">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Title Section with Purple Background -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add My Vehicle"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/rounded_title_background" />
+
+        <!-- Spacer to add spacing between title and form -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Vehicle Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_input">
+
+            <ImageView
+                android:id="@+id/imageViewVehicle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mark1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_login_vehicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Mark"
+                    android:textColor="#FFFFFF" />
+
+                <!-- EditText with Icon Inside -->
+                <Spinner
+                    android:id="@+id/spinner_vehicle_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/vehicle_marks" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Other Fields -->
+        <!-- Model Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_input">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model Name"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/et_model_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter model name"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Vehicle Color -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_input">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/et_color"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter color"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Plate Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_input">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plate Number"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/et_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter plate number"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Serial Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_input">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serial Number"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/et_serial_number"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Enter serial number"
+                android:padding="12dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Vehicle Image"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/iv_vehicle_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:contentDescription="Vehicle Image" />
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"/>
+
+        <!-- Consult Vehicles Button -->
+        <Button
+            android:id="@+id/btn_consult_vehicles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consult Vehicle List"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/mark1"
+            android:gravity="center"
+            android:width="10dp"
+            android:height="10dp" />
+    </item>
+</layer-list>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_blue">
+
+    <!-- Display the current balance -->
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance: 0.00"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <!-- Button to add money to wallet -->
+    <Button
+        android:id="@+id/addMoneyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Money"
+        android:layout_below="@id/balanceTextView"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"/>
+
+    <!-- Button to use money from wallet -->
+    <Button
+        android:id="@+id/useMoneyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use Money"
+        android:layout_below="@id/addMoneyButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"/>
+
+    <!-- LinearLayout to display transaction history -->
+    <LinearLayout
+        android:id="@+id/transactionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/useMoneyButton"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Transaction items will be dynamically added here -->
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/app_blue"> <!-- Applying the background color -->
+
+    <!-- ImageView to display vehicle image with rounded corners -->
+    <ImageView
+        android:id="@+id/iv_vehicle_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="Vehicle Image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_background" /> <!-- Rounded border for the image -->
+
+    <!-- Vehicle Mark -->
+    <TextView
+        android:id="@+id/tv_vehicle_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Vehicle Mark"
+        android:textColor="#FFFFFF" /> <!-- White text color -->
+
+    <!-- Vehicle Model -->
+    <TextView
+        android:id="@+id/tv_vehicle_model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Model"
+        android:textColor="#D3D3D3" /> <!-- Light gray text color -->
+
+    <!-- Vehicle Color -->
+    <TextView
+        android:id="@+id/tv_vehicle_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Color"
+        android:textColor="#D3D3D3" /> <!-- Light gray text color -->
+
+    <!-- Vehicle Plate Number -->
+    <TextView
+        android:id="@+id/tv_vehicle_plate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Plate Number"
+        android:textColor="#D3D3D3" /> <!-- Light gray text color -->
+
+    <!-- Vehicle Serial Number -->
+    <TextView
+        android:id="@+id/tv_vehicle_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Serial Number"
+        android:textColor="#D3D3D3" /> <!-- Light gray text color -->
+
+    <!-- Buttons (Update and Delete) with rounded background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white" /> <!-- White text with rounded background -->
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white" /> <!-- White text with rounded background -->
+    </LinearLayout>
+
+</LinearLayout>

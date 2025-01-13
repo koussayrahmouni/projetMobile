@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/app_blue"> <!-- Applying the background color -->
+
+    <!-- Search Section with Rounded Input Style -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_input"> <!-- Rounded background -->
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:drawablePadding="10dp"
+            android:textColorHint="#D3D3D3" /> <!-- White text color and light hint color -->
+    </LinearLayout>
+
+    <!-- Vehicle List Section with rounded background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_input"> <!-- Rounded background -->
+
+        <ListView
+            android:id="@+id/lv_vehicle_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" /> <!-- White text color for the list -->
+    </LinearLayout>
+
+    <!-- Return Button with rounded background -->
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white" /> <!-- White text on the button with rounded background -->
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:spacing="8dp"
+    android:background="@color/app_blue"> <!-- Match the background color -->
+
+    <!-- Vehicle Mark Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_input">
+        <EditText
+            android:id="@+id/et_vehicle_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle Mark"
+            android:inputType="textCapWords" /> <!-- Capitalize the first letter of each word -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Mark"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spinner_vehicle_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/vehicle_marks" />
+    </LinearLayout>
+
+    <!-- Model Name Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_input">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model Name"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_model_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter model name"
+            android:padding="12dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Vehicle Color Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_input">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_color"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter color"
+            android:padding="12dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Plate Number Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_input">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plate Number"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_plate_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter plate number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Serial Number Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_input">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Serial Number"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_serial_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter serial number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white" />
+</LinearLayout>
